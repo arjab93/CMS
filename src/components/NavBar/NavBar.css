@@ -1,0 +1,31 @@
+/* Style for the navigation bar with the main-nav class */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation links within the nav-list */
+.main-nav {
+    background-color: #333; /* Background color */
+}
+
+/* Style for the navigation links within the nav-list */
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
