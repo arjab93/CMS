@@ -28,7 +28,8 @@ const AllBlogs = () => {
             <img src={blog.avatar} alt="Avatar" width='100%' />
             <div className="container">
             <h4><b>{blog.title}</b></h4> 
-            <p>{blog.description}</p> 
+            <p style={{color:"green"}}>{blog.description}</p> 
+            <p>{blog.createdAt}</p>
             </div>
             </div>
           )
