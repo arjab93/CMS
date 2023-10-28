@@ -9,7 +9,7 @@ const AllBlogs = () => {
   const [blogs,setBlogs] = useState([])
 
   const fetchBlogs = async() =>{
-    const response = await axios.get("https://65392d98e3b530c8d9e80e85.mockapi.io/blogs")
+    const response = await axios.get("https://65392d98e3b530c8d9e80e85.mockapi.io/blogs/")
     if(response.status == 200){
       setBlogs(response.data)
     }
