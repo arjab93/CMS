@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import './AllBlogs.css'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const AllBlogs = () => {
+  const navigate = useNavigate()
   const [blogs,setBlogs] = useState([])
 
   const fetchBlogs = async() =>{
@@ -31,6 +33,7 @@ const AllBlogs = () => {
             <p style={{color:"green"}}>{blog.description}</p> 
             <p>{blog.createdAt}</p>
             </div>
+            <p onClick={()=>navigate("/singleBlog/" + blog.id)} style={{textAlign:"center"}}>Read More</p>
             </div>
           )
         })
