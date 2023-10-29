@@ -13,7 +13,7 @@ const CreateBlog = () => {
     const formData = new FormData(e.currentTarget)
     const data = Object.fromEntries(formData)
 
-    const response = await axios.post("https://65392d98e3b530c8d9e80e85.mockapi.io/blogs",data)
+    const response = await axios.post("https://65392d98e3b530c8d9e80e85.mockapi.io/blogs/",data)
     if(response.status == 201){
       navigate("/")
     } else{
