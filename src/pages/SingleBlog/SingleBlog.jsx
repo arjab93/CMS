@@ -51,6 +51,7 @@ const SingleBlog = () => {
             <h1 className="title">{blog?.title}</h1>
             <p className="description">{blog?.description}</p>
             <button onClick={deleteBlog}>Delete</button>
+            <button onClick={()=>navigate("/editBlog/" + blog.id)}>Edit</button>
         </div>
     </div>
     </>
