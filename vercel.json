@@ -1,5 +1,5 @@
 {
     "routes": [
-      { "src": "/createBlog", "dest": "/CreateBlog.jsx" }
+      { "src": "/createBlog", "dest": "src/pages/CreateBlog/CreateBlog.jsx" }
     ]
   }
